@@ -1,0 +1,21 @@
+body{background-image:url('FundalFemei.jpg');}
+table.tabel{background-color:#CBAACB;}
+table, tr, td{border:1px solid #E9EFF4;}
+h1.nume{color:black;
+font-family:"Arial";
+font-size:30px;}
+h2.sectiuni{color:black;
+font-family:"Times New Roman";
+font-style:italic;
+font-size:25px;}
+h4.subtitlu{color:grey;
+font-family:"Times New Roman";
+font-style:italic;
+font-size:20px;}
+p.paragraf{font-family:"Verdana";
+font-size:15px;
+color:black;}
+img.profil{margin:left;
+border:2px solid black;
+border-radius:12px;
+display:block;}

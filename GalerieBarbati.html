@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>GALERIE FOTO</title>
+<style>
+body{background-image: url('FundalBarbati.jpg');}
+h1{font-family:"Times New Roman";
+text-align:center;
+font-style: italic;
+color:#811C43;
+font-size:35px;}
+div.gallery {margin: 5px;
+border: 1px solid #ccc;
+float: left;
+width: 250px;}
+div.gallery:hover {border: 1px solid #777;}
+div.gallery img {width: 85%;
+height: 60%;}
+* {box-sizing:border-box}
+.slideshow-container {
+max-width: 500px;
+position: relative;
+margin: auto;}
+.mySlides
+{display: none;}.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -24px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;}
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;}
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);}
+.text {color: black;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 50%;
+text-align: center;}
+.numbertext {color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;}
+.dot {cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;}
+.active, .dot:hover {
+  background-color: #717171;}
+.fade {-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;}
+@-webkit-keyframes fade {from {opacity: .4}
+to {opacity: 1}}
+@keyframes fade{
+from {opacity: .4}
+to {opacity: 1}}
+</style>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+showSlides(slideIndex += n);}
+function currentSlide(n)
+{showSlides(slideIndex = n);}
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";}
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 3000);}
+</script>
+
+</head>
+<body>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext">1 / 3</div>
+<img src="BadBoy.jpg" style="width:50%">
+<div class="text">Parfum Bad Boy</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">2 / 3</div>
+<img src="Burberry.jpg" style="width:50%">
+<div class="text">Parfum Burberry</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">3 / 3</div>
+<img src="Boss.jpg" style="width:50%">
+<div class="text">Parfum Hugo Boss</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">4 / 4</div>
+<img src="Invictus.jpg" style="width:50%">
+<div class="text">Parfum Invictus</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">5/ 5</div>
+<img src="Lacoste.jpg" style="width:50%">
+<div class="text">Parfum Lacoste</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">6 / 6</div>
+<img src="Male.jpg" style="width:50%">
+<div class="text">Parfum La Male</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">7 / 7</div><img src="Sauvage.jpg" style="width:50%">
+<div class="text">Parfum Sauvage</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">8 / 8</div>
+<img src="Stronger.jpg" style="width:50%">
+<div class="text">Parfum Stronger With You</div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">9 / 9</div>
+<img src="Eros.jpg" style="width:50%">
+<div class="text">Parfum Eros</div></div>
+<div class="mySlides fade">
+<div class="numbertext">10 / 10</div>
+<img src="Uomo.jpg" style="width:50%">
+<div class="text">Parfum Uomo</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+<span class="dot" onclick="currentSlide(9)"></span>
+<span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+<h1>Galerie de poze cu produse masculine</h1>
+<div class="gallery">
+<a target="_blank" href="BadBoy.jpg">
+<img src="BadBoy.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Bad Boy de la Carolina Herrera</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Burberry.jpg">
+<img src="Burberry.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Mr. Burberry de la Burberry</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Boss.jpg">
+<img src="Boss.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Hugo Boss de la Hugo Boss</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Lacoste.jpg">
+<img src="Lacoste.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Laoste de la Lacoste</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Male.jpg">
+<img src="Male.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Le Male de la Jean Paul Gaultier</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Invictus.jpg">
+<img src="Invictus.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Invictus de la Paco Rabanne</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Sauvage.jpg">
+<img src="Sauvage.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Sauvage de la Dior</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Stronger.jpg">
+<img src="Stronger.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Stronger With You de la Giorgio Armani</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Eros.jpg">
+<img src="Eros.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Eros de la Versace</div></div>
+
+<div class="gallery">
+<a target="_blank" href="Uomo.jpg">
+<img src="Uomo.jpg" alt="Parfum" width="250" height="300"></a>
+<div class="desc">Parfumul Uomo Intense de la Valentino</div></div>
+<br>
+</br>
+<br>
+</br>
+<a href="ParfumerieChisMaria.html">Inapoi la pagina principala...</a>
+<br>
+</br>
+
+</body>
+</html>
